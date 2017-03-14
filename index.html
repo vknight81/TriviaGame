@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+<link href="https://fonts.googleapis.com/css?family=Katibeh|NTR|Rock+Salt" rel="stylesheet">
+
+<style>
+#timer {
+    position: fixed;
+    top: 1;
+    right: 0;
+    width: 500px;
+}
+#show-number {
+    position: fixed;
+    top: 1;
+    right: 0;
+    width: 500px;
+}
+
+#time-left {
+    position: fixed;
+    top: 5;
+    right: 0;
+    width: 500px;
+}
+
+body {
+	color: black;
+	background-image: url(background_7.png);		
+}
+
+h1 {
+	font-family: 'Rock Salt', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'NTR', sans-serif;
+}
+p, div, ul, li {
+    font-family: 'Katibeh', cursive;
+    font-size: large;
+}
+footer {
+	text-align: center;
+	font-size: large;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+	
+	<!-- First Row- Main Title -->
+	
+	<div class="row1">
+		<div class="col-lg-12">
+			<div class="row">
+			<h1>Random Trivia!</h1>
+		</div>
+	</div>
+
+
+	<!-- Second Row- Main --> 
+	<div class="row2">
+		
+		<!--Main Content-->
+
+		<div class="col-lg-10">
+			<div class = "row">
+			<h2>Your Trivia Game Has Started!</h2> 
+				<div id="timer"><h2>Time Left</h2></div><br>
+				<div id="show-number"></div><br>	
+				<div id="time-left"><h2></h2></div>
+				<h4>1. What is the smallest country in the world? </h4>
+				<form>
+			  		<input type="radio" name="firstQuestion" value="false"> Grenada<br>
+			  		<input type="radio" name="firstQuestion" value="true"> Vatican City<br>
+			  		<input type="radio"	name="firstQuestion" value="false"> Puerto Rico<br>
+			  		<input type="radio" name="firstQuestion" value="false"> Laos
+				</form> 
+
+				<h4>2. St. Patrick's day was originally associated with what color? </h4>
+				<form>
+			  		<input type="radio" name="secondQuestion" value="true"> Blue<br>
+			  		<input type="radio" name="secondQuestion" value="false"> Orange<br>
+			  		<input type="radio"	name="secondQuestion" value="false"> Green<br>
+			  		<input type="radio" name="secondQuestion" value="false"> Red
+				</form> 
+
+				<h4>3. What is the sleepiest animal in the world, sleeping around 22 hours per day? </h4>
+				<form>
+			  		<input type="radio" name="thirdQuestion" value="false"> Alligator<br>
+			  		<input type="radio" name="thirdQuestion" value="false"> Tortoise<br>
+			  		<input type="radio"	name="thirdQuestion" value="false"> Cheetah<br>
+			  		<input type="radio" name="thirdQuestion" value="true"> Koala
+				</form> 
+
+				<h4>4. What is the name of the scale used to measure the spicy heat of peppers? </h4>
+				<form>
+			  		<input type="radio" name="fourthQuestion" value="true"> Scoville Scale<br>
+			  		<input type="radio" name="fourthQuestion" value="false"> Likert Scale<br>
+			  		<input type="radio"	name="fourthQuestion" value="false"> Richter Scale<br>
+			  		<input type="radio" name="fourthQuestion" value="false"> Spisometer
+				</form> 
+
+				<h4>5. What gas makes up approximately 74% of the sun's mass? </h4>
+				<form>
+			  		<input type="radio" name="fifthQuestion" value="false"> Nitrogen<br>
+			  		<input type="radio" name="fifthQuestion" value="false"> Helium<br>
+			  		<input type="radio"	name="fifthQuestion" value="true"> Hydrogen<br>
+			  		<input type="radio" name="fifthQuestion" value="false"> Carbon
+				</form> 
+
+				<h4>6. Which one of the following NFL franchises has more than 5 Super Bowl victories? </h4>
+				<form>
+			  		<input type="radio" name="sixthQuestion" value="false"> Dallas Cowboys<br>
+			  		<input type="radio" name="sixthQuestion" value="true"> Pittsburgh Steelers<br>
+			  		<input type="radio"	name="sixthQuestion" value="false"> San Francisco 49ers<br>
+			  		<input type="radio" name="sixthQuestion" value="false"> New England Patriots
+				</form> 
+
+				<h4>7. What is the main Chinese dialect spoken in Hong Kong by a majority of the locals? </h4>
+				<form>
+			  		<input type="radio" name="seventhQuestion" value="false"> Taiwanese<br>
+			  		<input type="radio" name="seventhQuestion" value="false"> Mandarin<br>
+			  		<input type="radio"	name="seventhQuestion" value="false"> Wu<br>
+			  		<input type="radio" name="seventhQuestion" value="true"> Cantonese
+				</form> 
+
+				<h4>8. Like a fingerprint everyperson has a unique _____ print? </h4>
+				<form>
+			  		<input type="radio" name="eighthQuestion" value="true"> Tongue<br>
+			  		<input type="radio" name="eighthQuestion" value="false"> Nose<br>
+			  		<input type="radio"	name="eighthQuestion" value="false"> Elbow<br>
+			  		<input type="radio" name="eighthQuestion" value="false"> Toe
+				</form> 
+
+				<h4>9. How many total soccer players should be on the field at the same time? </h4>
+				<form>
+			  		<input type="radio" name="ninthQuestion" value="false"> 11<br>
+			  		<input type="radio" name="ninthQuestion" value="false"> 16<br>
+			  		<input type="radio"	name="ninthQuestion" value="true"> 22<br>
+			  		<input type="radio" name="ninthQuestion" value="false"> 24
+				</form> 
+
+				<h4>10. How many states are needed to ratify an amendment for it to become part of the U.S. Constitution? </h4>
+				<form>
+			  		<input type="radio" name="tenthQuestion" value="false"> 41<br>
+			  		<input type="radio" name="tenthQuestion" value="false"> 50<br>
+			  		<input type="radio"	name="tenthQuestion" value="false"> 26<br>
+			  		<input type="radio" name="tenthQuestion" value="true"> 38
+				</form> 
+
+				<br>
+
+			    <button id="stop">Stop</button>
+			    <button id="resume">Resume</button>
+
+			    <h2>Number Correct</h2>
+			    <p id="firstpara"></p>	
+			    <p id="secondpara"></p>	
+			    <p id="thirdpara"></p>
+			    <h2>Number Incorrect</h2>
+			    <p id="fourthpara"></p>
+			</div>
+		</div>
+
+
+
+	
+	<!--Footer Below -->
+
+		<div class="row3">
+			<div class="col-lg-12">
+				<h5>Copyright 2017 Vince Knight</h5>
+			</div>
+		</div>
+	</div>	
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+<script type="text/javascript"> 
+
+var firstQuestion = document.getElementsByName("firstQuestion");
+var secondQuestion = document.getElementsByName("secondQuestion");
+var thirdQuestion = document.getElementsByName("thirdQuestion");
+var fourthQuestion = document.getElementsByName("fourthQuestion");
+var fifthQuestion = document.getElementsByName("fifthQuestion");
+var sixthQuestion = document.getElementsByName("sixthQuestion");
+var seventhQuestion = document.getElementsByName("seventhQuestion");
+var eighthQuestion = document.getElementsByName("eighthQuestion");
+var ninthQuestion = document.getElementsByName("ninthQuestion");
+var tenthQuestion = document.getElementsByName("tenthQuestion");
+var myArray = [firstQuestion, secondQuestion, thirdQuestion, fourthQuestion, fifthQuestion, sixthQuestion, seventhQuestion, eighthQuestion, ninthQuestion, tenthQuestion];
+var numCorrect = 0
+var numIncorrect = 0
+var firstParagraph = document.getElementById("firstpara");
+var secondParagraph = document.getElementById("secondpara");
+var thirdParagraph = document.getElementById("thirdpara");
+var fourthParagraph = document.getElementById("fourthpara");
+
+function submitted (){
+	for (var i = 0; i < myArray.length; i++){
+		for (var x = 0; x < firstQuestion.length; x++){
+			if (myArray[i][x].value === "true" && myArray[i][x].checked){
+				firstParagraph.innerHTML += "You got Question #" + (i + 1) + " correct!<br>";
+				numCorrect++;
+				secondParagraph.innerHTML = numCorrect;
+			}
+			else if (myArray[i][x].value === "false"){
+				numIncorrect = (10 - numCorrect);
+				fourthParagraph.innerHTML = numIncorrect;
+			}
+		}
+	}
+}
+	
+
+    
+    var timer = 75;
+
+	var intervalId; 
+    
+    $("#stop").on("click", stop);  	
+
+    $("#resume").on("click", run);  	
+
+    function run() {
+      intervalId = setInterval(decrement, 1000);   
+     }
+    
+    function decrement() {     								
+    	timer--;				 							
+    $("#show-number").html("<h2>" + timer + "</h2>");
+
+    
+    if (timer === 0) {			
+    	stop();					
+    	alert("Time's Up...Check Your Score at Bottom");	
+    	submitted();
+    	console.log("did i make it")	
+		}	
+    }
+
+    setTimeout(function(){
+          fifteenSeconds();
+        }, 60000);
+
+    function fifteenSeconds() {
+
+        // in the element with an id of show-number add an h2 saying About 15 Seconds Left!
+        // console log 5 seconds left
+        $("#time-left").html("<h2>About 15 seconds Left!</h2>");
+      }  
+
+    
+    function stop() {		
+    	clearInterval(intervalId);       
+    }
+	run();  		
+ 
+</script>
+</body>
+</html>
